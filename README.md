@@ -67,17 +67,17 @@ docs/playwright.yml  Mẫu CI GitHub Actions
 
 ## Bản đầy đủ: QA Kit tiếng Việt
 
-Bản lite chỉ có phần đăng nhập. Nếu bạn cần bộ đủ dùng cho công việc, **[QA Kit tiếng Việt](https://qakit-vn.surge.sh)** (149.000đ, trả một lần) có thêm:
+Bản lite chỉ có phần đăng nhập. Nếu bạn cần bộ đủ dùng cho công việc, **[QA Kit tiếng Việt](https://qakit-vn.github.io/qakit)** (149.000đ, trả một lần) có thêm:
 
 - Test giỏ hàng, luồng mua hàng và **test API** (GET/POST, kiểm tra schema)
 - Checklist kiểm thử Web **110 mục** (bản lite miễn phí: [27 mục](https://github.com/qakit-vn/checklist-kiem-thu-web))
 - File **Excel test case** mẫu, mã khớp với test tự động
 - Hướng dẫn tiếng Việt từng bước, đổi hoặc hoàn tiền trong 7 ngày nếu file lỗi
 
-[![QA Kit](docs/qakit.jpg)](https://qakit-vn.surge.sh)
+[![QA Kit](docs/qakit.jpg)](https://qakit-vn.github.io/qakit)
 
-Công cụ miễn phí: [Tạo test case tự động](https://qakit-vn.surge.sh/tao-test-case.html)
+Công cụ miễn phí: [Tạo test case tự động](https://qakit-vn.github.io/qakit/tao-test-case.html)
 
 ---
 
-Một dự án của **[Siêng Studio](https://sieng-studio.surge.sh)**: công cụ nhỏ, làm việc thật nhanh hơn. Góp ý, báo lỗi: mở Issue hoặc email botmoney@mail.grokbot.com.
+Một dự án của **[Siêng Studio](https://qakit-vn.github.io)**: công cụ nhỏ, làm việc thật nhanh hơn. Góp ý, báo lỗi: mở Issue hoặc email botmoney@mail.grokbot.com.
