@@ -47,6 +47,24 @@ tests/ui/         Test giao diện
 docs/playwright.yml  Mẫu CI GitHub Actions
 ```
 
+## Lỗi hay gặp khi mới chạy
+
+| Triệu chứng | Cách xử lý |
+| --- | --- |
+| `Executable doesn't exist ... chromium` | Chạy `npx playwright install chromium` (trên Linux CI thêm `--with-deps`) |
+| Test timeout ở bước `goto` | Mạng chậm hoặc trang demo đang lỗi: thử lại, hoặc tăng `timeout` trong `playwright.config.ts` |
+| Test lúc pass lúc fail | Tìm `waitForTimeout` và thay bằng `expect(...).toBeVisible()`; mở trace bằng `npx playwright show-trace` |
+| Locator tìm thấy nhiều phần tử | Dùng `getByRole('button', { name: '...' })` thay vì CSS chung chung, hoặc thêm `data-testid` |
+
+## Áp dụng cho trang của bạn
+
+1. Đổi `baseURL` (hoặc chạy `BASE_URL=https://trang-cua-ban npm test`).
+2. Chạy `npx playwright codegen https://trang-cua-ban`, thao tác một luồng, copy locator sinh ra.
+3. Tạo `pages/TenTrangPage.ts` theo mẫu `LoginPage.ts`, khai báo trong `tests/fixtures.ts`.
+4. Viết test trong `tests/ui/`, mỗi test một mã `TC-...` để đối chiếu với file test case.
+
+Đọc thêm (tiếng Việt): [Playwright TypeScript cho người mới trên Viblo](https://viblo.asia/p/playwright-typescript-cho-nguoi-moi-tu-cai-dat-den-page-object-fixture-va-test-data-driven-vbLbjRGpLnk)
+
 ## Bản đầy đủ: QA Kit tiếng Việt
 
 Bản lite chỉ có phần đăng nhập. Nếu bạn cần bộ đủ dùng cho công việc, **[QA Kit tiếng Việt](https://qakit-vn.surge.sh)** (149.000đ, trả một lần) có thêm:
